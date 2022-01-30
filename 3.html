@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inscription</title>
+</head>
+<body>
+<h1 style="text-align: center">inscription en licence</h1>
+<fieldset>
+  <legend style="text-align: center"> info personnelles </legend>
+  <p style="text-align: center">
+    <label for="nom" > Votre nom:</label><input type="text" name="name" id="nom" size="20"> <br/> <br/>
+    <label for="pre" > Votre prenom:</label><input type="text" name="prename" id="pre" size="20"><br/> <br/>
+    <label for="age" > Votre age:</label><input type="number" name="age" id="age" size="20"><br/> <br/>
+    <label for="dn" > Votre date de naissance :</label><input type="date" name="dn" id="dn" size="20"> <br/> <br/>
+    <label for="adr" > Votre adresse:</label> <textarea name="adresse" id="adr" cols="10" rows="10"> votre adresse</textarea><br/> <br/>
+    <label for="em" > Votre email:</label><input type="email" name="email" id="em" size="20"> <br/> <br/>
+    <label for="password1" > Votre mot de passe:</label><input type="password" name="pass" id="password1" size="20" required><br/> <br/>
+    <label for="password2" > Repetez votre mot de passe:</label><input type="password" name="pass" id="password2" size="20" required><br/> <br/>
+    <label for="url" > Votre url:</label><input type="url" name="url" id="url" size="20"> <br/> <br/>
+  </p>
+</fieldset>
+<fieldset>
+  <legend style="text-align: center"> gestion des groupes et des options</legend>
+  <p style="text-align: center">
+    <label for="groupe1" > Votre groupe:</label><input type="radio" name="groupe" id="groupe1" value="g1">groupe1
+    <label for="groupe2" > </label><input type="radio" name="groupe" id="groupe2" value="g1">groupe2
+    <label for="groupe3" > </label><input type="radio" name="groupe" id="groupe3" value="g1">groupe3 <br/> <br/>
+    <label for="num" > Votre num carte etudiant</label><input type="number" name="numero" id="num" size="20" placeholder="numero carte etudiant????>"> <br/> <br/>
+    <label for="op">choisissez votre option :</label><select name="option" id="op">
+    <option value="j"> j2ee</option>
+    <option value="a"> android</option>
+    <option value="n"> net</option>
+    <option value="h"> html5</option>
+    <option value="f"> flex</option>
+  </select>
+  </p>
+</fieldset>
+
+<p style="text-align: center">
+  <label for="ve"> verification</label> <input type="text" id="ve" name="verification" size="20" pattern="[I][N][S][A][T][0-9]{4}"> <br/>
+  <a href="4.html"><input type="submit" value="valider"></a> <input type="reset" value="annuler"></p>
+</body>
+</html>
